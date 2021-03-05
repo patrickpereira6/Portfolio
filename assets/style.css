@@ -5,7 +5,7 @@
 }
 
 body {
-    color: #ffff;
+    color: rgb(168, 6, 6);
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -17,40 +17,46 @@ header {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    position: sticky;
-    position: -webkit-sticky;
     top: 0;
     background-size: cover;
     background-attachment: fixed;
     background-position: 80%;
+    font-size: 50px;
+    marker: none;
+    position: sticky;
+    position: -webkit-sticky;
 }
 
 .categories {
- padding: 20px 35px;
- background-color:  rgb(168, 6, 6);
+ padding: 0; 
+ background-color: #FFFF;
  display: flex;
- justify-content: space-between;
+ justify-content:space-between;
  flex-wrap: wrap;
  flex-direction: column;
- position: sticky;
- position: -webkit-sticky;
  top: 0;
  background-size: cover;
  background-attachment: fixed;
- background-position: 80%;
- border: 5px solid black;
- margin: 0;
+ font-size: larger;
+ width: 35%;
+ font-size: 30px;
+ box-sizing: content-box;
  
+}   
+
+.categories1 {
+  padding-left: 5px;
+  text-align: left;
+  display: inline-block;
+  align-self:flex-start;
+  padding-left: 0px;
+  border-right: 5px solid black;
+  width: 200px;
+  height: 400px;
+  margin: 0 auto;
+
 }
 
-header h1 {
-    font-weight: bold;
-    font-weight: bold;
-    margin: ;
-    font-size: 36px;
-    color: #fce138;
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  }
 
   header a {
     text-decoration: none;
@@ -59,8 +65,8 @@ header h1 {
   
   header nav {
     margin: 7px 0;
+    }
 
-  }
   header h1 {
     font-weight: bold;
     margin: 0;
@@ -74,6 +80,7 @@ header h1 {
     justify-content: space-between;
     align-items: center;
     list-style: row;
+    list-style-type: none;
   }
   
   header nav ul li a {
@@ -86,8 +93,6 @@ header h1 {
     flex-wrap: wrap;
     width: 100%;
     align-items: right;
-  
-    
   }
   
   header nav ul li a:hover {
@@ -99,9 +104,30 @@ header h1 {
 
   /* HEADER / NAV STYLE END */
 
+  /* INTRO START */
+  .intro {
+    background-image: url('../images/hero-bg.jpg');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    background-attachment: fixed;
+    background-position: 80%;
+  }
+  
+  .intro-cta {
+    width: 35%;
+    text-align: right;
+    margin: 3.5%;
+    color: rgb(168, 6, 6);
+    font-size: 18px;
+    line-height: 1.2;
+    padding: 20px 20px;
+  }
   /* FOOTER STYLES START */
 footer {
-    background: #fce138;
+    background: rgb(168, 6, 6);
     padding: 40px 35px;
     display: flex;
     justify-content: space-between;
@@ -110,7 +136,7 @@ footer {
   }
   
   footer h2 {
-    color: #024e76;
+    color: #ffff;
     font-size: 30px;
     margin: 0;
   }
@@ -146,9 +172,10 @@ section {
     width: 35%;
     text-align: right;
     margin: 3.5%;
-    color: #fff;
+    color: rgb(168, 6, 6);
     font-size: 18px;
     line-height: 1.2;
+    padding: 20px 20px;
   }
   
   .hero-cta h2 {
@@ -159,6 +186,7 @@ section {
   }
 
   /* HERO STYLES END */
+
 
   /*Media query for smaller desktop screens and smaller*/
   @media screen and (max-width: 980px) {
