@@ -27,35 +27,53 @@ header {
     position: -webkit-sticky;
 }
 
-.categories {
- padding: 0; 
- background-color: #FFFF;
- display: flex;
- justify-content:space-between;
- flex-wrap: wrap;
- flex-direction: column;
- top: 0;
- background-size: cover;
- background-attachment: fixed;
- font-size: larger;
- width: 20%;
- font-size: 30px;
- box-sizing: content-box;
- 
+.main {
+  display:inline-flex;
+  padding: 0; 
+  background-color: #FFFF;
+  display: flex;
+  justify-content:space-between;
+  flex-wrap: wrap;
+  flex-direction: column;
+  top: 0;
+  background-size: cover;
+  background-attachment: fixed;
+  font-size: larger;
+  font-size: 30px;
+  box-sizing: content-box;
+  width: 100%;
+  border: 5px solid rgb(168, 6, 6)
 }   
 
+.categories {
+  padding-left: 20px; 
+  border: 5px solid blue;
+}
 .categories1 {
   padding-left: 5px;
   text-align: left;
   display: inline-block;
   align-self:flex-start;
   padding-left: 0px;
-  border-right: 5px solid black;
-  width: 200px;
+  border: 5px solid black;
+  width: 15%;
   margin: 0 auto;
-
+  order: 0;
 }
 
+.about-me-description {
+  padding-left: 500px;
+  text-align: center;
+  display: inline-block;
+  align-content: center;
+  flex-direction: row;
+  border: 5px solid black;
+  justify-content: flex-end;
+  align-items: baseline;
+  width: 85%;
+  order: 1;
+  flex: grow 2;;
+}
 
   header a {
     text-decoration: none;
