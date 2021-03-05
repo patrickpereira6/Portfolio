@@ -38,7 +38,7 @@ header {
  background-size: cover;
  background-attachment: fixed;
  font-size: larger;
- width: 35%;
+ width: 20%;
  font-size: 30px;
  box-sizing: content-box;
  
@@ -52,7 +52,6 @@ header {
   padding-left: 0px;
   border-right: 5px solid black;
   width: 200px;
-  height: 400px;
   margin: 0 auto;
 
 }
