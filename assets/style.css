@@ -15,6 +15,9 @@ body {
 
 }
 
+section {
+  padding: 30px;
+}
 
 /* HEADER / NAV BAR styles */
 
@@ -35,8 +38,9 @@ header {
 }
 
 .main {
-  display: flex background-color: #FFFF;
   display: flex;
+  background-color: #FFFF;
+  /* display: flex; */
   justify-content: space-between;
   flex-wrap: wrap;
   flex-direction: column;
@@ -64,6 +68,7 @@ header {
   flex-wrap: wrap;
   align-items: stretch;
   justify-content: space-between;
+  marker: none;
 }
 
 .About-me {
@@ -84,31 +89,71 @@ header {
   padding-left: 50px;
 
 }
+.contact-me {
+  display: inline-block;
 
-.work {
-  display: grid;
-  border: 2px solid red;
+}
 
+.contact-me-elements{
+  color:rgb(168, 6, 6);
+  display:contents;
+
+}
+.contact-me-text {
+ 
+}
+#Work 
+
+  /* border: 2px solid red; */
+  /* justify-content: space-betwee; */
+
+.Work-title {
+  width: 15%;
 
 }
 
 .grid-container {
-  display: inline-grid;
-  grid-template-rows: 30px 30px 30px 30px;
+  display: grid;
   grid-gap: 10px;
-  background-color: rgb(168, 6, 6);
+  grid-template-columns: auto auto auto auto;
+  width: 80%;
   padding: 10px;
-  justify-content: space-between;
 }
 
-.grid-item surf report {
-  height: 400px;
-  width: 400px;
-  border: 2px solid red;
+.grid-item {
+  border: black 5px; 
+  background-color: rgba(255, 255, 255, 0.8);
   text-align: center;
   padding: 20px;
   font-size: 30px;
+  size: 100%;
 
+}
+
+.surf-report {
+  grid-column: 1 / span 2 ;
+  grid-row: 1/ span 2;
+  width: 100%;
+  height: 100%;
+  
+}
+
+.led-wall {
+  grid-column: 1;
+  grid-row: 3;
+}
+.react-calc {
+  grid-column: 2;
+  grid-row: 3;
+}
+.pastel-puzzles {
+  grid-column: 1;
+  grid-row: 4;
+}
+
+.runbuddy {
+  grid-column: 2;
+  grid-row: 4;
 }
 
 header a {
@@ -154,7 +199,7 @@ header nav ul li a:hover {
   color: #ffff;
   border-radius: 15px;
   text-shadow: none;
-  .
+
 }
 
 /* IMG*/
@@ -168,13 +213,74 @@ header nav ul li a:hover {
   background-position: center;
   border-radius: 70%;
   justify-content: right;
+  align: center;
 }
 
-.img-headshots: {
-  transform: rotate(20deg);
+.img-surf-report {
+  display: grid;
+  display: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  grid-column-start: 1; 
+  grid-column-end: 3;
+  grid-row-start: 1; 
+  grid-row-end: 2;
+  width: 30%;
+  height: 30%;
 }
 
+.img-led-wall {
+display: grid;
+background-size: contain;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  grid-column-start: 2; 
+  grid-column-end: 2;
+  grid-row-start: 2; 
+  grid-row-end: 1;
+  width: 17%;
+  height: 17%;
+}
 
+.img-calc {
+  display: grid;
+  background-size: contain;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  grid-column-start: 2; 
+  grid-column-end: 2;
+  grid-row-start: 2; 
+  grid-row-end: 2;
+  width: 17%;
+  height: 17%;
+}
+
+.img-pastel {
+  display: grid;
+  background-size: contain;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  grid-column-start: 1; 
+  grid-column-end: 3;
+  grid-row-start: 1; 
+  grid-row-end: 2;
+  width: 17%;
+  height: 17%;
+}
+
+.img-runbuddy{
+  display: grid;
+  background-size: contain;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  grid-column-start: 2; 
+  grid-column-end: 2;
+  grid-row-start: 3; 
+  grid-row-end: 3;
+  width: 17%;
+  height: 17%;
+}
 
 /* INTRO START */
 .intro {
@@ -189,7 +295,6 @@ header nav ul li a:hover {
   justify-content: space-between;
   width: 100%;
 }
-
 
 .head {
   text-align: left;
@@ -206,9 +311,6 @@ header nav ul li a:hover {
 /* END FOOTER STYLES */
 
 /* STYLE ALL SECTION TAGS */
-section {
-  padding: 30px;
-}
 
 
 /*Media query for smaller desktop screens and smaller*/
